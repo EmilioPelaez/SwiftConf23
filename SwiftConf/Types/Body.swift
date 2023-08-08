@@ -1,5 +1,5 @@
 //
-//  Content.swift
+//  Body.swift
 //  SwiftConf
 //
 //  Created by Emilio Peláez on 9/8/23.
@@ -8,7 +8,7 @@
 import SlideKit
 import SwiftUI
 
-struct Content<Child: View>: View {
+struct Body<Child: View>: View {
 	
 	let text: String
 	let child: () -> Child
@@ -28,7 +28,7 @@ struct Content<Child: View>: View {
 	}
 }
 
-extension Content where Child == EmptyView {
+extension Body where Child == EmptyView {
 	init(_ text: String) {
 		self.text = text
 		self.child = { EmptyView() }

@@ -24,6 +24,7 @@ struct SwiftConfApp: App {
 		WindowGroup {
 			PresentationView(slideSize: Self.configuration.size) {
 				presentationContentView
+					.modifier(ColorSchemeInverter())
 			}
 		}
 		.setupAsPresentationWindow(Self.configuration.slideIndexController, appName: "SwiftConf")
