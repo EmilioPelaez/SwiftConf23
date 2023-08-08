@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,14 +41,15 @@
 				F37C6B633128E680984E0138 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8A83F115BB00C499B495F5E8 /* SwiftConf */ = {
 			isa = PBXGroup;
 			children = (
 				630F1FF5E2E4DBCE72F62FE3 /* Info.plist */,
+				557CA1EE7B5684F41E723E55 /* SwiftConfApp.swift */,
 				32C34C7B2020E40C4DD389DE /* SlideConfiguration.swift */,
 				0933313D0DD93B5FF3369014 /* SwiftConf.entitlements */,
-				557CA1EE7B5684F41E723E55 /* SwiftConfApp.swift */,
 				E435C644704D16723995BAB8 /* Slides */,
 			);
 			path = SwiftConf;
@@ -99,8 +100,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 36B4F94E8EDD474C7945532C /* Build configuration list for PBXProject "SwiftConf" */;
 			compatibilityVersion = "Xcode 11.0";
