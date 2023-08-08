@@ -25,4 +25,11 @@ struct SlideConfiguration {
 		WrapUpSlide()
 		OutroSlide()
 	}
+	
+	let theme = PresentationTheme()
+}
+
+struct PresentationTheme: SlideTheme {
+	let headerSlideStyle = HeaderStyle()
+	let itemStyle = ContentStyle()
 }

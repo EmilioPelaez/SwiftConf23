@@ -16,5 +16,6 @@ struct SubtitleStyle: ItemStyle {
 				.padding(.leading, 90)
 		}
 		.font(.system(size: 60, weight: .medium, design: .default))
+		.foregroundStyle(.primary)
 	}
 }

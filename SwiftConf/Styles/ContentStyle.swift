@@ -16,5 +16,6 @@ struct ContentStyle: ItemStyle {
 				.padding(.leading, 90)
 		}
 		.font(.system(size: 45, weight: .medium, design: .default))
+		.foregroundStyle(.primary)
 	}
 }
