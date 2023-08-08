@@ -10,6 +10,11 @@
 		312ABB1A402A2B6AD0B12552 /* SwiftConfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CA1EE7B5684F41E723E55 /* SwiftConfApp.swift */; };
 		4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C34C7B2020E40C4DD389DE /* SlideConfiguration.swift */; };
 		C59F564348BC5E314A43FF3A /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = D660E19048CD35F6865A49D5 /* SlideKit */; };
+		C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B62A82F4230045D123 /* SubtitleStyle.swift */; };
+		C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B82A82F4730045D123 /* HeaderStyle.swift */; };
+		C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BA2A82F4D20045D123 /* ContentStyle.swift */; };
+		C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BD2A82F5680045D123 /* Subtitle.swift */; };
+		C89455C02A82F63B0045D123 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BF2A82F63B0045D123 /* Content.swift */; };
 		C8E2DB782A82EBC6006D1503 /* IntroSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB772A82EBC6006D1503 /* IntroSlide.swift */; };
 		C8E2DB7A2A82EC32006D1503 /* ViewTreeSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB792A82EC32006D1503 /* ViewTreeSlide.swift */; };
 		C8E2DB7C2A82EC7A006D1503 /* DownstreamSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */; };
@@ -30,6 +35,11 @@
 		430A10496358C268FB77665B /* SwiftConf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557CA1EE7B5684F41E723E55 /* SwiftConfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConfApp.swift; sourceTree = "<group>"; };
 		630F1FF5E2E4DBCE72F62FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C89455B62A82F4230045D123 /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
+		C89455B82A82F4730045D123 /* HeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle.swift; sourceTree = "<group>"; };
+		C89455BA2A82F4D20045D123 /* ContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStyle.swift; sourceTree = "<group>"; };
+		C89455BD2A82F5680045D123 /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
+		C89455BF2A82F63B0045D123 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C8E2DB772A82EBC6006D1503 /* IntroSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSlide.swift; sourceTree = "<group>"; };
 		C8E2DB792A82EC32006D1503 /* ViewTreeSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTreeSlide.swift; sourceTree = "<group>"; };
 		C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownstreamSlide.swift; sourceTree = "<group>"; };
@@ -71,8 +81,29 @@
 				32C34C7B2020E40C4DD389DE /* SlideConfiguration.swift */,
 				0933313D0DD93B5FF3369014 /* SwiftConf.entitlements */,
 				E435C644704D16723995BAB8 /* Slides */,
+				C89455BC2A82F54B0045D123 /* Types */,
+				C89455B52A82F3E70045D123 /* Styles */,
 			);
 			path = SwiftConf;
+			sourceTree = "<group>";
+		};
+		C89455B52A82F3E70045D123 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				C89455B82A82F4730045D123 /* HeaderStyle.swift */,
+				C89455B62A82F4230045D123 /* SubtitleStyle.swift */,
+				C89455BA2A82F4D20045D123 /* ContentStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		C89455BC2A82F54B0045D123 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				C89455BD2A82F5680045D123 /* Subtitle.swift */,
+				C89455BF2A82F63B0045D123 /* Content.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 		E435C644704D16723995BAB8 /* Slides */ = {
@@ -161,9 +192,14 @@
 				C8E2DB7A2A82EC32006D1503 /* ViewTreeSlide.swift in Sources */,
 				C8E2DB842A82EE92006D1503 /* ErrorHandlingSlide.swift in Sources */,
 				C8E2DB8A2A82EF08006D1503 /* OutroSlide.swift in Sources */,
+				C89455C02A82F63B0045D123 /* Content.swift in Sources */,
+				C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */,
 				C8E2DB882A82EEE0006D1503 /* WrapUpSlide.swift in Sources */,
 				C8E2DB7E2A82EC99006D1503 /* UpstreamSlide.swift in Sources */,
+				C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */,
+				C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */,
 				DBEB96582321EF6044E1D797 /* SampleSlide.swift in Sources */,
+				C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */,
 				4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */,
 				C8E2DB822A82EE67006D1503 /* ResponderChainSlide.swift in Sources */,
 				312ABB1A402A2B6AD0B12552 /* SwiftConfApp.swift in Sources */,

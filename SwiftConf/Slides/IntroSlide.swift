@@ -10,7 +10,10 @@ import SwiftUI
 
 struct IntroSlide: Slide {
 	var body: some View {
-		Item("Intro")
+		HeaderSlide("Title") {
+			Subtitle("Name")
+			Content("Position")
+		}
 	}
 }
 
