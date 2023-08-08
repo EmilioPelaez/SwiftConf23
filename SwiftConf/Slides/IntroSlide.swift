@@ -12,7 +12,8 @@ struct IntroSlide: Slide {
 	var body: some View {
 		HeaderSlide("The View Hierarchy as a Communication Channel") {
 			Subtitle("Emilio Peláez")
-			Content("Mobile Engineering Director @ Modus Create")
+			Callout("iOS Developer since 2008")
+			Callout("Mobile Engineering Director @ Modus Create")
 		}
 	}
 }
