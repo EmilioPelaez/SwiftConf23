@@ -10,7 +10,9 @@ import SwiftUI
 
 struct OutroSlide: Slide {
 	var body: some View {
-		Item("Outro")
+		HeaderSlide("Thank you!") {
+			
+		}
 	}
 }
 

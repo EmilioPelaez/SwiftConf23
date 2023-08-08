@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ErrorHandlingSlide: Slide {
 	var body: some View {
-		Item("Error Handling")
+		HeaderSlide("Error Handling") {
+			
+		}
 	}
 }
 

@@ -10,7 +10,9 @@ import SwiftUI
 
 struct DownstreamSlide: Slide {
 	var body: some View {
-		Item("Downstream")
+		HeaderSlide("Passing Data Downstream") {
+			
+		}
 	}
 }
 

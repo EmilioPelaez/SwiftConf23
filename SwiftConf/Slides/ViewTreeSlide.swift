@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ViewTreeSlide: Slide {
 	var body: some View {
-		Item("View Tree")
+		HeaderSlide("Understanding the View Tree") {
+			
+		}
 	}
 }
 

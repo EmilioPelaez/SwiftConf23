@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ResponderChainSlide: Slide {
 	var body: some View {
-		Item("Responder Chain")
+		HeaderSlide("Building a Responder Chain") {
+			
+		}
 	}
 }
 

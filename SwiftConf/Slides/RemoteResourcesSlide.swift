@@ -10,7 +10,9 @@ import SwiftUI
 
 struct RemoteResourcesSlide: Slide {
 	var body: some View {
-		Item("Remote Resources")
+		HeaderSlide("Remote Resources") {
+			
+		}
 	}
 }
 

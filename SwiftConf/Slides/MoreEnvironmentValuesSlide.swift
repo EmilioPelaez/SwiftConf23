@@ -10,7 +10,9 @@ import SwiftUI
 
 struct MoreEnvironmentValuesSlide: Slide {
 	var body: some View {
-		Item("Environment Values")
+		HeaderSlide("Fancy Environment Values") {
+			
+		}
 	}
 }
 

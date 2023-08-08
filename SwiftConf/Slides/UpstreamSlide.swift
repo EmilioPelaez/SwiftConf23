@@ -9,9 +9,11 @@ import SlideKit
 import SwiftUI
 
 struct UpstreamSlide: Slide {
-    var body: some View {
-        Item("Upstream")
-    }
+	var body: some View {
+		HeaderSlide("Sending Data Upstream") {
+			
+		}
+	}
 }
 
 struct UpstreamSlide_Previews: PreviewProvider {

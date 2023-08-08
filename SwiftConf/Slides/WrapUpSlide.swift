@@ -10,7 +10,9 @@ import SwiftUI
 
 struct WrapUpSlide: Slide {
 	var body: some View {
-		Item("Wrap Up")
+		HeaderSlide("Wrapping Up") {
+			
+		}
 	}
 }
 

@@ -10,9 +10,9 @@ import SwiftUI
 
 struct IntroSlide: Slide {
 	var body: some View {
-		HeaderSlide("Title") {
-			Subtitle("Name")
-			Content("Position")
+		HeaderSlide("The View Hierarchy as a Communication Channel") {
+			Subtitle("Emilio Peláez")
+			Content("Mobile Engineering Director @ Modus Create")
 		}
 	}
 }
