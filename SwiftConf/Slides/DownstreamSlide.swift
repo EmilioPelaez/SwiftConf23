@@ -11,7 +11,10 @@ import SwiftUI
 struct DownstreamSlide: Slide {
 	var body: some View {
 		HeaderSlide("Passing Data Downstream") {
-			
+			Element("Arguments")
+			Element("Environment Objects")
+			Element("Environment values")
+			Element("Data in the environment will flow downwards until it's replaced")
 		}
 	}
 }

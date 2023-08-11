@@ -11,7 +11,12 @@ import SwiftUI
 struct UpstreamSlide: Slide {
 	var body: some View {
 		HeaderSlide("Sending Data Upstream") {
-			
+			Element("Bindings")
+			Element("Environment Objects")
+			Element("Preference Keys")
+			Element("Only one Preference Key defined in SwiftUI")
+			Element("Many modifiers that allow transformation of preference keys")
+			Element("Preference Keys are a responder chain")
 		}
 	}
 }

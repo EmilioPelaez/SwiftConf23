@@ -11,7 +11,9 @@ import SwiftUI
 struct MoreEnvironmentValuesSlide: Slide {
 	var body: some View {
 		HeaderSlide("Fancy Environment Values") {
-			
+			Element("Environment values are usually structs, but we can also pass closures")
+			Element("callAsFunction")
+			Element("Using a pattern similar to preference keys we can transform events")
 		}
 	}
 }

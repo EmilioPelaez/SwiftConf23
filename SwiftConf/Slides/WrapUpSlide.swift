@@ -11,7 +11,8 @@ import SwiftUI
 struct WrapUpSlide: Slide {
 	var body: some View {
 		HeaderSlide("Wrapping Up") {
-			
+			Element("The environment is opaque")
+			Element("Find a balance between using the environment and other methods")
 		}
 	}
 }
