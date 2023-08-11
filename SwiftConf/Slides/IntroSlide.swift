@@ -15,14 +15,7 @@ struct IntroSlide: Slide {
 			Callout("iOS Developer since 2008")
 			Callout("Mobile Engineering Director @ Modus Create")
 		}
-		.overlay(alignment: .topTrailing) {
-			Image("Emilio")
-				.resizable()
-				.frame(width: 400, height: 400)
-				.clipShape(Circle())
-				.padding(.top, 48)
-				.padding(.trailing, 100)
-		}
+		.imageOverlay("Emilio")
 	}
 }
 
