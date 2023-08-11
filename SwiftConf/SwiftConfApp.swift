@@ -27,9 +27,11 @@ struct SwiftConfApp: App {
 					.modifier(ColorSchemeInverter())
 			}
 		}
+#if os(macOS)
 		.setupAsPresentationWindow(Self.configuration.slideIndexController, appName: "SwiftConf")
 		.addPDFExportCommands(for: presentationContentView, with: Self.configuration.slideIndexController, size: Self.configuration.size)
-		
+#endif
+#if os(macOS)
 		WindowGroup {
 			macOSPresenterView(
 				slideSize: Self.configuration.size,
@@ -39,5 +41,6 @@ struct SwiftConfApp: App {
 			}
 		}
 		.setupAsPresenterWindow()
+#endif
 	}
 }
