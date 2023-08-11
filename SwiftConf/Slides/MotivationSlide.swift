@@ -9,20 +9,43 @@ import SlideKit
 import SwiftUI
 
 struct MotivationSlide: Slide {
+	
+	enum SlidePhasedState: Int, PhasedState {
+		case initial, two, three, four
+	}
+	
+	@Phase var phasedStateStore
+	
 	var body: some View {
 		HeaderSlide("Motivation") {
-			Element("Sending data/messages between components in an app is a common challenge")
-				.padding(.bottom, 10)
-			Element("We create full architectures about it")
-				.padding(.bottom, 10)
-			Element("This is not an architecture talk")
-				.padding(.bottom, 10)
-			Element("We're going to explore the tools available out of the box")
-				.padding(.bottom, 10)
-			Element("We're also going to find interesting ways of using them")
-				.padding(.bottom, 10)
+			VStack(alignment: .leading, spacing: 50) {
+				Element("Sending data and messages between components in an app is a common challenge")
+				if phasedStateStore.after(.two) {
+					Element("Whole architectures are created to solve it")
+				}
+				if phasedStateStore.after(.three) {
+					Element("We're going to explore the tools available in SwiftUI")
+				}
+				if phasedStateStore.after(.four) {
+					Element("And find interesting ways of using them!")
+				}
+			}
+		} auxiliary: {
+			Image("Architecture")
+				.resizable()
+				.clipShape(RoundedRectangle(cornerRadius: 25.0))
 		}
 		.extend()
+	}
+	
+	var script: String {
+"""
+Sending data/messages between components in an app is a common challenge
+We create full architectures about it
+This is not an architecture talk
+We're going to explore the tools available out of the box
+We're also going to find interesting ways of using them
+"""
 	}
 }
 
