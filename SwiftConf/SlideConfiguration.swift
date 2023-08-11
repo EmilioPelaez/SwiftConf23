@@ -14,16 +14,16 @@ struct SlideConfiguration {
 	
 	///  Add your slides into the trailing closure.
 	let slideIndexController = SlideIndexController {
-//		IntroSlide()
-//		MotivationSlide()
-//		ViewTreeSlide()
-//		DownstreamSlide()
-//		UpstreamSlide()
-//		MoreEnvironmentValuesSlide()
-//		ResponderChainSlide()
-//		ErrorHandlingSlide()
-//		RemoteResourcesSlide()
-//		WrapUpSlide()
+		IntroSlide()
+		MotivationSlide()
+		ViewTreeSlide()
+		DownstreamSlide()
+		UpstreamSlide()
+		MoreEnvironmentValuesSlide()
+		ResponderChainSlide()
+		ErrorHandlingSlide()
+		RemoteResourcesSlide()
+		WrapUpSlide()
 		OutroSlide()
 	}
 	
