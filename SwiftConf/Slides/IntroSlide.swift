@@ -15,6 +15,7 @@ struct IntroSlide: Slide {
 			Callout("iOS Developer since 2008")
 			Callout("Mobile Engineering Director @ Modus Create")
 		}
+		.extend()
 	}
 }
 

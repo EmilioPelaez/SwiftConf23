@@ -12,9 +12,9 @@ struct SubtitleStyle: ItemStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		VStack(alignment: .leading, spacing: 0) {
 			configuration.label
-				.padding(.bottom, 25)
+				.padding(.top, 20)
 			configuration.child
-				.padding(.leading, 90)
+				.padding(.leading, 45)
 		}
 		.font(.system(size: 60, weight: .medium, design: .default))
 		.foregroundStyle(.primary)

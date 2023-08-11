@@ -12,7 +12,7 @@ struct CalloutStyle: ItemStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		VStack(alignment: .leading, spacing: 0) {
 			configuration.label
-				.padding(.bottom, 10)
+				.padding(.top, 10)
 			configuration.child
 				.padding(.leading, 90)
 		}

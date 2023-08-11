@@ -12,9 +12,9 @@ struct ContentStyle: ItemStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		VStack(alignment: .leading, spacing: 0) {
 			configuration.label
-				.padding(.bottom, 10)
+				.padding(.top, 20)
 			configuration.child
-				.padding(.leading, 90)
+				.padding(.leading, 45)
 		}
 		.font(.system(size: 45, weight: .medium, design: .default))
 		.foregroundStyle(.primary)

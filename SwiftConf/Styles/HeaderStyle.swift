@@ -13,7 +13,7 @@ struct HeaderStyle: HeaderSlideStyle {
 		VStack(alignment: .leading, spacing: 0) {
 			configuration.header
 				.font(.system(size: 90, weight: .regular, design: .rounded))
-				.padding(.bottom, 40)
+				.padding(.bottom, 20)
 				.foregroundStyle(.primary)
 			configuration.content
 		}
