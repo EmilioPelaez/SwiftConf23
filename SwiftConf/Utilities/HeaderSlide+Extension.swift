@@ -16,7 +16,7 @@ extension HeaderSlide {
 					VStack(alignment: .leading, spacing: 0) {
 						content()
 					}
-					.frame(width: proxy.size.width * 2 / 3)
+					.frame(maxWidth: .infinity, alignment: .leading)
 					auxiliary()
 						.frame(width: proxy.size.width / 3)
 				}
@@ -31,7 +31,7 @@ extension HeaderSlide {
 					VStack(alignment: .leading, spacing: 0) {
 						content()
 					}
-					.frame(width: proxy.size.width / 2)
+					.frame(maxWidth: .infinity, alignment: .leading)
 					extra()
 						.frame(width: proxy.size.width / 2)
 				}
