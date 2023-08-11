@@ -10,14 +10,14 @@ import SwiftUI
 
 struct HeaderStyle: HeaderSlideStyle {
 	func makeBody(configuration: Configuration) -> some View {
-		VStack(alignment: .leading, spacing: 15) {
+		VStack(alignment: .leading, spacing: 0) {
 			configuration.header
 				.font(.system(size: 90, weight: .regular, design: .rounded))
-				.padding(.vertical, 40)
+				.padding(.bottom, 40)
 				.foregroundStyle(.primary)
 			configuration.content
 		}
-		.padding(.horizontal, 48)
-		.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+		.padding(48)
+		.frame(maxWidth: .infinity, alignment: .leading)
 	}
 }

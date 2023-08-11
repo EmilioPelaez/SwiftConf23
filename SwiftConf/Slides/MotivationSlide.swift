@@ -17,6 +17,7 @@ struct MotivationSlide: Slide {
 			Element("We're going to explore the tools available out of the box")
 			Element("We're also going to find interesting ways of using them")
 		}
+		.extend()
 	}
 }
 

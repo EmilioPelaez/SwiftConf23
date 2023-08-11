@@ -19,6 +19,7 @@
 		C89455C42A82FB8F0045D123 /* Callout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455C32A82FB8F0045D123 /* Callout.swift */; };
 		C89455C72A82FCF90045D123 /* ColorSchemeInverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455C62A82FCF90045D123 /* ColorSchemeInverter.swift */; };
 		C89455C92A84522E0045D123 /* MotivationSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455C82A84522E0045D123 /* MotivationSlide.swift */; };
+		C8D8E10C2A86B8B30083A38B /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D8E10B2A86B8B30083A38B /* ViewExtensions.swift */; };
 		C8E2DB782A82EBC6006D1503 /* IntroSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB772A82EBC6006D1503 /* IntroSlide.swift */; };
 		C8E2DB7A2A82EC32006D1503 /* ViewTreeSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB792A82EC32006D1503 /* ViewTreeSlide.swift */; };
 		C8E2DB7C2A82EC7A006D1503 /* DownstreamSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */; };
@@ -48,6 +49,7 @@
 		C89455C32A82FB8F0045D123 /* Callout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callout.swift; sourceTree = "<group>"; };
 		C89455C62A82FCF90045D123 /* ColorSchemeInverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeInverter.swift; sourceTree = "<group>"; };
 		C89455C82A84522E0045D123 /* MotivationSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationSlide.swift; sourceTree = "<group>"; };
+		C8D8E10B2A86B8B30083A38B /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		C8E2DB772A82EBC6006D1503 /* IntroSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSlide.swift; sourceTree = "<group>"; };
 		C8E2DB792A82EC32006D1503 /* ViewTreeSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTreeSlide.swift; sourceTree = "<group>"; };
 		C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownstreamSlide.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C89455C62A82FCF90045D123 /* ColorSchemeInverter.swift */,
+				C8D8E10B2A86B8B30083A38B /* ViewExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */,
 				4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */,
 				C8E2DB822A82EE67006D1503 /* ResponderChainSlide.swift in Sources */,
+				C8D8E10C2A86B8B30083A38B /* ViewExtensions.swift in Sources */,
 				312ABB1A402A2B6AD0B12552 /* SwiftConfApp.swift in Sources */,
 				C89455C42A82FB8F0045D123 /* Callout.swift in Sources */,
 				C8E2DB7C2A82EC7A006D1503 /* DownstreamSlide.swift in Sources */,

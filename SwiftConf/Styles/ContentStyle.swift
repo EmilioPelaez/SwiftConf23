@@ -10,8 +10,9 @@ import SwiftUI
 
 struct ContentStyle: ItemStyle {
 	func makeBody(configuration: Configuration) -> some View {
-		VStack(alignment: .leading, spacing: 25) {
+		VStack(alignment: .leading, spacing: 0) {
 			configuration.label
+				.padding(.bottom, 10)
 			configuration.child
 				.padding(.leading, 90)
 		}
