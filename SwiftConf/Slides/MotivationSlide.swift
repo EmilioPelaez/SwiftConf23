@@ -9,26 +9,13 @@ import SlideKit
 import SwiftUI
 
 struct MotivationSlide: Slide {
-	
-	enum SlidePhasedState: Int, PhasedState {
-		case initial, two, three, four
-	}
-	
-	@Phase var phasedStateStore
-	
 	var body: some View {
 		HeaderSlide("Motivation") {
 			VStack(alignment: .leading, spacing: 50) {
 				Element("Sending data and messages between components in an app is a common challenge")
-				if phasedStateStore.after(.two) {
-					Element("Whole architectures are created to solve it")
-				}
-				if phasedStateStore.after(.three) {
-					Element("We're going to explore the tools available in SwiftUI")
-				}
-				if phasedStateStore.after(.four) {
-					Element("And find interesting ways of using them!")
-				}
+				Element("Whole architectures are created to solve it")
+				Element("We're going to explore the tools available in SwiftUI")
+				Element("And find interesting ways of using them!")
 			}
 		} auxiliary: {
 			Image("Architecture").prepare()
