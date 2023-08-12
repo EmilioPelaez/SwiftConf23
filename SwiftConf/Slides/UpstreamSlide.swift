@@ -10,14 +10,22 @@ import SwiftUI
 
 struct UpstreamSlide: Slide {
 	var body: some View {
-		HeaderSlide("Sending Data Upstream") {
-			Element("Bindings")
-			Element("Environment Objects")
-			Element("Preference Keys")
-			Element("Only one Preference Key defined in SwiftUI")
-			Element("Many modifiers that allow transformation of preference keys")
-			Element("Preference Keys are a responder chain")
+		HeaderSlide("Sending Data Upstream and... Sidestream?") {
+			Element("Bindings and Closures") {
+				Callout("Single-level communication")
+				Callout("Sidestream!")
+			}
+			Element("Environment Objects") {
+				Callout("Hello again")
+				Callout("Sidestream too!")
+			}
+			Element("Preference Keys") {
+				Callout("Only one Preference Key defined in SwiftUI, but don't use it!")
+				Callout("Many modifiers that allow interaction with Preference Keys")
+				Callout("Preference Keys are a responder chain!")
+			}
 		}
+		.extend()
 	}
 }
 

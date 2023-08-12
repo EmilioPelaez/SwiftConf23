@@ -13,6 +13,7 @@ struct RemoteResourcesSlide: Slide {
 		HeaderSlide("Remote Resources") {
 			Element("A similar pattern can be used to centralize resource retrieval")
 		}
+		.extend()
 	}
 }
 

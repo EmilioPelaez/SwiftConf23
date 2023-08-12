@@ -15,6 +15,7 @@ struct ErrorHandlingSlide: Slide {
 			Element("Create handlers")
 			Element("Create environment value")
 		}
+		.extend()
 	}
 }
 

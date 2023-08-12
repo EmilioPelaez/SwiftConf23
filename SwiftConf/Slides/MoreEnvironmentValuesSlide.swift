@@ -15,6 +15,7 @@ struct MoreEnvironmentValuesSlide: Slide {
 			Element("callAsFunction")
 			Element("Using a pattern similar to preference keys we can transform events")
 		}
+		.extend()
 	}
 }
 

@@ -14,6 +14,7 @@ struct WrapUpSlide: Slide {
 			Element("The environment is opaque")
 			Element("Find a balance between using the environment and other methods")
 		}
+		.extend()
 	}
 }
 

@@ -13,7 +13,7 @@ struct Callout<Child: View>: View {
 	let text: String
 	let child: () -> Child
 	
-	init(_ text: String, child: @escaping () -> Child) {
+	init(_ text: String, @ViewBuilder child: @escaping () -> Child) {
 		self.text = text
 		self.child = child
 	}

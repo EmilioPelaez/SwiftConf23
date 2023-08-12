@@ -19,6 +19,7 @@ struct ResponderChainSlide: Slide {
 			Element("If it can't respond, the event is passed up the chain")
 			Element("If it reaches the end, it fails or throws an error")
 		}
+		.extend()
 	}
 }
 

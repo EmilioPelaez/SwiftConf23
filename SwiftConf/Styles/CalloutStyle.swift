@@ -16,7 +16,8 @@ struct CalloutStyle: ItemStyle {
 			configuration.child
 				.padding(.leading, 90)
 		}
-		.font(.system(size: 45, weight: .medium, design: .default))
+		.font(.system(size: 45, weight: .regular, design: .default))
+		.fontDesign(.rounded)
 		.foregroundStyle(.secondary)
 	}
 }
