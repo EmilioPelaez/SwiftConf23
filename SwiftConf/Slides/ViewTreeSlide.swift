@@ -18,16 +18,15 @@ struct ViewTreeSlide: Slide {
 	
 	var body: some View {
 		HeaderSlide("Understanding the View Tree") {
-			Code(code, colorTheme: .presentation, fontSize: 30)
+			Code(code, colorTheme: .presentation, fontSize: 30).extend(.center)
 		} extra: {
 			if phasedStateStore.when(.initial) {
-				SimpleView()
+				SimpleView().extend(.center)
 			}
 			if phasedStateStore.when(.realTree) {
-				Image("Tree").prepare()
+				Image("Tree").prepare().extend(.center)
 			}
 		}
-		.extend()
 	}
 	
 	var code: String {
@@ -99,7 +98,6 @@ struct SimpleView: View {
 			.font(.callout)
 			.foregroundStyle(.secondary)
 		}
-		.padding(.top, 50)
 		.scaleEffect(.init(width: 3, height: 3))
 	}
 }
