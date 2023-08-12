@@ -18,8 +18,17 @@ extension View {
 				.resizable()
 				.frame(width: 400, height: 400)
 				.clipShape(Circle())
-//				.padding(.top, 48)
 				.padding(.trailing, 100)
 		}
 	}
 }
+
+extension Image {
+	func prepare() -> some View {
+		resizable()
+			.aspectRatio(contentMode: .fit)
+			.cornerRadius(25)
+	}
+}
+
+

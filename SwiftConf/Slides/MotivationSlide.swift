@@ -31,9 +31,7 @@ struct MotivationSlide: Slide {
 				}
 			}
 		} auxiliary: {
-			Image("Architecture")
-				.resizable()
-				.clipShape(RoundedRectangle(cornerRadius: 25.0))
+			Image("Architecture").prepare()
 		}
 		.extend()
 	}
