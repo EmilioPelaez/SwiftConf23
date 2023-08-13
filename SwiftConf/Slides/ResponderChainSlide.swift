@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ResponderChainSlide: Slide {
 	var body: some View {
-		HeaderSlide("Building a Responder Chain") {
+		HeaderSlide("The Responder Chain") {
 			Element("A design pattern")
 			Element("Consists of a chain of responders (duh)")
 			Element("The chain receives an event in one of its nodes")
@@ -20,6 +20,12 @@ struct ResponderChainSlide: Slide {
 			Element("If it reaches the end, it fails or throws an error")
 		}
 		.extend()
+	}
+	
+	var script: String {
+"""
+A responder chain is a design pattern
+"""
 	}
 }
 
