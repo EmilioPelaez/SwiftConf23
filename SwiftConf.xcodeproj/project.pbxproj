@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		312ABB1A402A2B6AD0B12552 /* SwiftConfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CA1EE7B5684F41E723E55 /* SwiftConfApp.swift */; };
 		4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C34C7B2020E40C4DD389DE /* SlideConfiguration.swift */; };
-		C59F564348BC5E314A43FF3A /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = D660E19048CD35F6865A49D5 /* SlideKit */; };
+		C8748A912A88634400CF472D /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = C8748A902A88634400CF472D /* SlideKit */; };
 		C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B62A82F4230045D123 /* SubtitleStyle.swift */; };
 		C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B82A82F4730045D123 /* HeaderStyle.swift */; };
 		C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BA2A82F4D20045D123 /* ContentStyle.swift */; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59F564348BC5E314A43FF3A /* SlideKit in Frameworks */,
+				C8748A912A88634400CF472D /* SlideKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			);
 			name = SwiftConf;
 			packageProductDependencies = (
-				D660E19048CD35F6865A49D5 /* SlideKit */,
+				C8748A902A88634400CF472D /* SlideKit */,
 			);
 			productName = SwiftConf;
 			productReference = 430A10496358C268FB77665B /* SwiftConf.app */;
@@ -205,7 +205,7 @@
 			);
 			mainGroup = 146978F4C006073CFC7616A4;
 			packageReferences = (
-				F3AC3535D98C7198451D9BCC /* XCRemoteSwiftPackageReference "SlideKit" */,
+				C8748A8F2A88634400CF472D /* XCLocalSwiftPackageReference "../../Third Party/SlideKit" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -456,21 +456,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		F3AC3535D98C7198451D9BCC /* XCRemoteSwiftPackageReference "SlideKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mtj0928/SlideKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		C8748A8F2A88634400CF472D /* XCLocalSwiftPackageReference "../../Third Party/SlideKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Third Party/SlideKit";
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D660E19048CD35F6865A49D5 /* SlideKit */ = {
+		C8748A902A88634400CF472D /* SlideKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F3AC3535D98C7198451D9BCC /* XCRemoteSwiftPackageReference "SlideKit" */;
 			productName = SlideKit;
 		};
 /* End XCSwiftPackageProductDependency section */

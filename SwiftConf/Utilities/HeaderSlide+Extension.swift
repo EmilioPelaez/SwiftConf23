@@ -9,8 +9,8 @@ import SlideKit
 import SwiftUI
 
 extension HeaderSlide {
-	public init(_ header: String, fontWeight: Font.Weight = .semibold, @ViewBuilder content: @escaping () -> some View, @ViewBuilder auxiliary: @escaping () -> some View) {
-		self.init(header, fontWeight: fontWeight) {
+	public init(_ header: LocalizedStringKey, @ViewBuilder content: @escaping () -> some View, @ViewBuilder auxiliary: @escaping () -> some View) {
+		self.init(header) {
 			GeometryReader { proxy in
 				HStack(alignment: .top, spacing: 0) {
 					VStack(alignment: .leading, spacing: 0) {
@@ -24,8 +24,8 @@ extension HeaderSlide {
 		}
 	}
 	
-	public init(_ header: String, fontWeight: Font.Weight = .semibold, @ViewBuilder content: @escaping () -> some View, @ViewBuilder extra: @escaping () -> some View) {
-		self.init(header, fontWeight: fontWeight) {
+	public init(_ header: LocalizedStringKey, @ViewBuilder content: @escaping () -> some View, @ViewBuilder extra: @escaping () -> some View) {
+		self.init(header) {
 			GeometryReader { proxy in
 				HStack(alignment: .top, spacing: 0) {
 					VStack(alignment: .leading, spacing: 0) {
