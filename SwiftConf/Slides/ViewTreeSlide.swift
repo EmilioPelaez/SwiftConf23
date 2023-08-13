@@ -9,6 +9,7 @@ import SlideKit
 import SwiftUI
 
 struct ViewTreeSlide: Slide {
+	@Environment(\.codeTheme) var codeTheme
 	
 	enum SlidePhasedState: Int, PhasedState {
 		case initial, realTree, visualization
@@ -18,7 +19,7 @@ struct ViewTreeSlide: Slide {
 	
 	var body: some View {
 		HeaderSlide("Understanding the View Tree") {
-			Code(code, colorTheme: .presentation, fontSize: 30).extend(.center)
+			Code(code, colorTheme: codeTheme, fontSize: 30).extend(.center)
 		} extra: {
 			if phasedStateStore.when(.initial) {
 				SimpleView().extend(.center)

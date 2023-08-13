@@ -12,6 +12,7 @@ struct SwiftConfApp: App {
 	
 	/// Edit slide configurations in SlideConfiguration.swift
 	private static let configuration = SlideConfiguration()
+	@StateObject var colorSchemeContainer = ColorSchemeContainer()
 	
 	/// A presentation content view.
 	/// Edit the view here if you'd like to set environments, overlay views or background views.
@@ -22,14 +23,14 @@ struct SwiftConfApp: App {
 	
 	var body: some Scene {
 #if os(macOS)
-		
 		WindowGroup {
 			PresentationView(slideSize: Self.configuration.size) {
 				presentationContentView
+					.modifier(ColorSchemeProvider())
 					.modifier(ColorSchemeInverter())
+					.environmentObject(colorSchemeContainer)
 			}
 		}
-
 		.setupAsPresentationWindow(Self.configuration.slideIndexController, appName: "SwiftConf")
 		.addPDFExportCommands(for: presentationContentView, with: Self.configuration.slideIndexController, size: Self.configuration.size)
 #endif
@@ -40,7 +41,9 @@ struct SwiftConfApp: App {
 			) {
 				presentationContentView
 			}
-//			.modifier(ColorSchemeInverter())
+			.modifier(ColorSchemeProvider())
+			.modifier(ColorSchemeInverter())
+			.environmentObject(colorSchemeContainer)
 		}
 #if os(macOS)
 		.setupAsPresenterWindow()

@@ -9,6 +9,7 @@ import SlideKit
 import SwiftUI
 
 struct DownstreamSlide: Slide {
+	@Environment(\.codeTheme) var codeTheme
 	
 	enum SlidePhasedState: Int, PhasedState {
 		case arguments, environmentObjects, environmentValues
@@ -40,11 +41,11 @@ struct DownstreamSlide: Slide {
 		} extra: {
 			switch phasedStateStore.current {
 			case .arguments:
-				Code(code, colorTheme: .presentation, fontSize: 30).frame(maxWidth: .infinity, alignment: .leading)
+				Code(code, colorTheme: codeTheme, fontSize: 30).frame(maxWidth: .infinity, alignment: .leading)
 			case .environmentObjects:
 				Image("MOO").prepare().padding(.top, 50)
 			case .environmentValues:
-				Code(code, colorTheme: .presentation, fontSize: 30)
+				Code(code, colorTheme: codeTheme, fontSize: 30)
 			}
 		}
 	}
