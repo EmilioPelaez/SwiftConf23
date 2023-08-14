@@ -17,18 +17,19 @@ struct MotivationSlide: Slide {
 				Element("We're going to explore the tools available in SwiftUI")
 				Element("And find interesting ways of using them!")
 			}
+			.extend(.center)
 		} auxiliary: {
 			Image("Architecture").prepare()
 		}
-		.extend()
 	}
 	
 	var script: String {
 """
-Sending data/messages between components in an app is a common challenge
-We create full architectures about it
-This is not an architecture talk
-We're going to explore the tools available out of the box
+The motivation for this talk is that one of the earliest challenges developers run into is how to send data between two components in an application
+It's such a common challenge that we develop whole architectures to solve it
+There's lots of opinions on how it should be done
+But I'm not here to convince you to use or not use a specific architecture
+Instead we're going to explore the tools available out of the box in SwiftUI
 We're also going to find interesting ways of using them
 """
 	}

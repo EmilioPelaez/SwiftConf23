@@ -70,9 +70,8 @@ Grandparents and children still have a direct path, even if it has a few stops
 Siblings and cousins have less direct connections
 In SwiftUI the tree has a direction
 Parents know who their children are, but children don't know who their parent is
-We're going to look at the ways in which any two views can communicate
+We're going to look at the different ways in which we can send data and messages between views
 A SwiftUI app is a huge connected tree
-Because the tree flows downwards, we're going to start with data flowing downwards
 """
 		}
 	}
