@@ -11,22 +11,20 @@ import SwiftUI
 struct UpstreamSlide: Slide {
 	
 	enum SlidePhasedState: Int, PhasedState {
-		case arguments, environmentObjects, preferenceKeys
-		static var initial: SlidePhasedState { .arguments }
+		case bindings, environmentObjects, preferenceKeys
+		static var initial: SlidePhasedState { .bindings }
 	}
 	
 	@Phase var phasedStateStore
 	
 	var body: some View {
-		HeaderSlide("Sending Data Upstream and... Sidestream?") {
+		HeaderSlide("Downstream, Upstream and... Sidestream?") {
 			Element("Bindings and Closures") {
 				Callout("Single-level communication")
-				Callout("Sidestream!")
 			}
 			if phasedStateStore.after(.environmentObjects) {
 				Element("Environment Objects") {
 					Callout("Hello again")
-					Callout("Sidestream too!")
 				}
 			}
 			if phasedStateStore.after(.preferenceKeys) {
@@ -37,18 +35,20 @@ struct UpstreamSlide: Slide {
 				}
 			}
 		} auxiliary: {
-			Color.red
+			Color.white
 		}
 		.extend()
 	}
 	
 	var script: String {
 		switch phasedStateStore.current {
-		case .arguments:
+		case .bindings:
 """
+
 """
 		case .environmentObjects:
 """
+
 """
 		case .preferenceKeys:
 """

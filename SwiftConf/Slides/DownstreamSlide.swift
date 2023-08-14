@@ -22,20 +22,18 @@ struct DownstreamSlide: Slide {
 		HeaderSlide("Sending Data Downstream") {
 			Element("init Parameters") {
 				Callout("Single-level communication")
-				Callout("One-way*")
 			}
 			if phasedStateStore.after(.environmentObjects) {
 				Element("Environment Objects") {
 					Callout("Multi-level communication")
-					Callout("Two-way")
 				}
 			}
 			if phasedStateStore.after(.environmentValues) {
 				Element("Environment Values") {
+					Callout("Multi-level communication")
 					Callout("Key-Value Store")
 					Callout("Defining them requires a default value")
 					Callout("Values will flow downwards until replaced")
-					Callout("One-way*")
 				}
 			}
 		} extra: {

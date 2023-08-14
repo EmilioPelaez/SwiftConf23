@@ -11,20 +11,22 @@ import SwiftUI
 struct ResponderChainSlide: Slide {
 	var body: some View {
 		HeaderSlide("The Responder Chain") {
-			Element("A design pattern")
-			Element("Consists of a chain of responders (duh)")
-			Element("The chain receives an event in one of its nodes")
-			Element("The responder determines if it can respond to the event or not")
-			Element("If it can respond, the event is consumed")
-			Element("If it can't respond, the event is passed up the chain")
-			Element("If it reaches the end, it fails or throws an error")
+			
 		}
 		.extend()
 	}
 	
 	var script: String {
 """
-A responder chain is a design pattern
+A responder chain is a design pattern where we have a number of connected objects
+Each one of this links is called a responder, and it has the potential to respond to an arbitrary event
+They way it works is by giving an event to one of the responders of the chain, usually the first responder
+If that term sounds familiar it's because this pattern also exists in UIKit
+That responder determines if it can respond to the event
+If it can, the event is consumed
+If it cannot, the event is passed to the next responder, who does the same thing
+This goes on until the event is consumed or it reaches the end
+Depending on the implementation, it may fail silently or throw an error
 """
 	}
 }

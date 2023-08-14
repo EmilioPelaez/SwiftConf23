@@ -17,6 +17,12 @@ struct MoreEnvironmentValuesSlide: Slide {
 		}
 		.extend()
 	}
+	
+	var script: String {
+"""
+
+"""
+	}
 }
 
 struct MoreEnvironmentValuesSlide_Previews: PreviewProvider {
