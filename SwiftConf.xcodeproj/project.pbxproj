@@ -190,6 +190,7 @@
 		C8748ACD2A8ABFF600CF472D /* Old */ = {
 			isa = PBXGroup;
 			children = (
+				3D5C828113C2D3B58C481433 /* SampleSlide.swift */,
 				C8E2DB7D2A82EC99006D1503 /* UpstreamSlide.swift */,
 				C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */,
 				C8E2DB812A82EE67006D1503 /* ResponderChainSlide.swift */,
@@ -234,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				C8748ACD2A8ABFF600CF472D /* Old */,
-				3D5C828113C2D3B58C481433 /* SampleSlide.swift */,
 				C8E2DB772A82EBC6006D1503 /* IntroSlide.swift */,
 				C89455C82A84522E0045D123 /* MotivationSlide.swift */,
 				C8E2DB792A82EC32006D1503 /* ViewTreeSlide.swift */,
