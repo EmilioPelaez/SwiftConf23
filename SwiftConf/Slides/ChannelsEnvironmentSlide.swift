@@ -22,13 +22,17 @@ struct ChannelsEnvironmentSlide: Slide {
 				Callout("A collection of data that gets propagated to every view in the view hierarchy")
 				Callout("Data will flow downwards until replaced")
 			}
-			Element("Environment Objects") {
-				Callout("Very easy to use and powerful")
-				Callout("Use classes instead of structs")
+			if phasedStateStore.after(.objects) {
+				Element("Environment Objects") {
+					Callout("Very easy to use and powerful")
+					Callout("Use classes instead of structs")
+				}
 			}
-			Element("Environment Values") {
-				Callout("Key-Value Store")
-				Callout("Defining them requires a default value")
+			if phasedStateStore.after(.values) {
+				Element("Environment Values") {
+					Callout("Key-Value Store")
+					Callout("Defining them requires a default value")
+				}
 			}
 		}
 		.extend()
