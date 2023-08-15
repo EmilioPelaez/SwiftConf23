@@ -51,6 +51,26 @@
 		C8748AD02A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */; };
 		C8748AD22A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */; };
 		C8748AD32A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */; };
+		C8748ADC2A8BD90200CF472D /* ParticleEmitterParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD52A8BD90200CF472D /* ParticleEmitterParticle.swift */; };
+		C8748ADD2A8BD90200CF472D /* ParticleEmitterParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD52A8BD90200CF472D /* ParticleEmitterParticle.swift */; };
+		C8748ADE2A8BD90200CF472D /* ParticleEmitterInternalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD62A8BD90200CF472D /* ParticleEmitterInternalState.swift */; };
+		C8748ADF2A8BD90200CF472D /* ParticleEmitterInternalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD62A8BD90200CF472D /* ParticleEmitterInternalState.swift */; };
+		C8748AE02A8BD90200CF472D /* ParticleEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD72A8BD90200CF472D /* ParticleEmitter.swift */; };
+		C8748AE12A8BD90200CF472D /* ParticleEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD72A8BD90200CF472D /* ParticleEmitter.swift */; };
+		C8748AE22A8BD90200CF472D /* ParticleEmitterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD82A8BD90200CF472D /* ParticleEmitterSource.swift */; };
+		C8748AE32A8BD90200CF472D /* ParticleEmitterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD82A8BD90200CF472D /* ParticleEmitterSource.swift */; };
+		C8748AE42A8BD90200CF472D /* ParticleEmitterRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD92A8BD90200CF472D /* ParticleEmitterRules.swift */; };
+		C8748AE52A8BD90200CF472D /* ParticleEmitterRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD92A8BD90200CF472D /* ParticleEmitterRules.swift */; };
+		C8748AE62A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ADA2A8BD90200CF472D /* ParticleEmitterRunMode.swift */; };
+		C8748AE72A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ADA2A8BD90200CF472D /* ParticleEmitterRunMode.swift */; };
+		C8748AE82A8BD90200CF472D /* ParticleEmitterOpacityRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ADB2A8BD90200CF472D /* ParticleEmitterOpacityRule.swift */; };
+		C8748AE92A8BD90200CF472D /* ParticleEmitterOpacityRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ADB2A8BD90200CF472D /* ParticleEmitterOpacityRule.swift */; };
+		C8748AEC2A8BD92900CF472D /* CGMath in Frameworks */ = {isa = PBXBuildFile; productRef = C8748AEB2A8BD92900CF472D /* CGMath */; };
+		C8748AEE2A8BD93000CF472D /* CGMath in Frameworks */ = {isa = PBXBuildFile; productRef = C8748AED2A8BD93000CF472D /* CGMath */; };
+		C8748AF02A8BD95B00CF472D /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */; };
+		C8748AF12A8BD95B00CF472D /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */; };
+		C8748AF32A8BDD3800CF472D /* WaterDrops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF22A8BDD3800CF472D /* WaterDrops.swift */; };
+		C8748AF42A8BDD3800CF472D /* WaterDrops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF22A8BDD3800CF472D /* WaterDrops.swift */; };
 		C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B62A82F4230045D123 /* SubtitleStyle.swift */; };
 		C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B82A82F4730045D123 /* HeaderStyle.swift */; };
 		C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BA2A82F4D20045D123 /* ContentStyle.swift */; };
@@ -95,6 +115,15 @@
 		C8748ACA2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPreferencesSlide.swift; sourceTree = "<group>"; };
 		C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedEnvironment.swift; sourceTree = "<group>"; };
 		C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderChainVisualization.swift; sourceTree = "<group>"; };
+		C8748AD52A8BD90200CF472D /* ParticleEmitterParticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterParticle.swift; sourceTree = "<group>"; };
+		C8748AD62A8BD90200CF472D /* ParticleEmitterInternalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterInternalState.swift; sourceTree = "<group>"; };
+		C8748AD72A8BD90200CF472D /* ParticleEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitter.swift; sourceTree = "<group>"; };
+		C8748AD82A8BD90200CF472D /* ParticleEmitterSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterSource.swift; sourceTree = "<group>"; };
+		C8748AD92A8BD90200CF472D /* ParticleEmitterRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterRules.swift; sourceTree = "<group>"; };
+		C8748ADA2A8BD90200CF472D /* ParticleEmitterRunMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterRunMode.swift; sourceTree = "<group>"; };
+		C8748ADB2A8BD90200CF472D /* ParticleEmitterOpacityRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterOpacityRule.swift; sourceTree = "<group>"; };
+		C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		C8748AF22A8BDD3800CF472D /* WaterDrops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrops.swift; sourceTree = "<group>"; };
 		C89455B62A82F4230045D123 /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
 		C89455B82A82F4730045D123 /* HeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle.swift; sourceTree = "<group>"; };
 		C89455BA2A82F4D20045D123 /* ContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStyle.swift; sourceTree = "<group>"; };
@@ -125,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8748AEE2A8BD93000CF472D /* CGMath in Frameworks */,
 				C8748AAA2A886A8A00CF472D /* SlideKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8748AEC2A8BD92900CF472D /* CGMath in Frameworks */,
 				C8748A912A88634400CF472D /* SlideKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +194,7 @@
 				C89455BC2A82F54B0045D123 /* Types */,
 				C89455B52A82F3E70045D123 /* Styles */,
 				C89455C52A82FCE10045D123 /* Utilities */,
+				C8748AD42A8BD8F300CF472D /* Particles */,
 			);
 			path = SwiftConf;
 			sourceTree = "<group>";
@@ -202,6 +234,22 @@
 				C8E2DB812A82EE67006D1503 /* ResponderChainSlide.swift */,
 			);
 			path = Old;
+			sourceTree = "<group>";
+		};
+		C8748AD42A8BD8F300CF472D /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C8748AD72A8BD90200CF472D /* ParticleEmitter.swift */,
+				C8748AD62A8BD90200CF472D /* ParticleEmitterInternalState.swift */,
+				C8748ADB2A8BD90200CF472D /* ParticleEmitterOpacityRule.swift */,
+				C8748AD52A8BD90200CF472D /* ParticleEmitterParticle.swift */,
+				C8748AD92A8BD90200CF472D /* ParticleEmitterRules.swift */,
+				C8748ADA2A8BD90200CF472D /* ParticleEmitterRunMode.swift */,
+				C8748AD82A8BD90200CF472D /* ParticleEmitterSource.swift */,
+				C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */,
+				C8748AF22A8BDD3800CF472D /* WaterDrops.swift */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 		C89455B52A82F3E70045D123 /* Styles */ = {
@@ -285,6 +333,7 @@
 			name = Presenter;
 			packageProductDependencies = (
 				C8748AA92A886A8A00CF472D /* SlideKit */,
+				C8748AED2A8BD93000CF472D /* CGMath */,
 			);
 			productName = Presenter;
 			productReference = C8748A982A886A6500CF472D /* Presenter.app */;
@@ -305,6 +354,7 @@
 			name = SwiftConf;
 			packageProductDependencies = (
 				C8748A902A88634400CF472D /* SlideKit */,
+				C8748AEB2A8BD92900CF472D /* CGMath */,
 			);
 			productName = SwiftConf;
 			productReference = 430A10496358C268FB77665B /* SwiftConf.app */;
@@ -335,6 +385,7 @@
 			mainGroup = 146978F4C006073CFC7616A4;
 			packageReferences = (
 				C8748A8F2A88634400CF472D /* XCLocalSwiftPackageReference "../../Third Party/SlideKit" */,
+				C8748AEA2A8BD92900CF472D /* XCRemoteSwiftPackageReference "CGMath" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +428,7 @@
 				C8E2DB7A2A82EC32006D1503 /* ViewTreeSlide.swift in Sources */,
 				C8E2DB842A82EE92006D1503 /* ErrorHandlingSlide.swift in Sources */,
 				C8748A932A8869A700CF472D /* CodeThemeEnvironment.swift in Sources */,
+				C8748AE42A8BD90200CF472D /* ParticleEmitterRules.swift in Sources */,
 				C8748AD22A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */,
 				C8E2DB8A2A82EF08006D1503 /* OutroSlide.swift in Sources */,
 				C89455C02A82F63B0045D123 /* Element.swift in Sources */,
@@ -386,19 +438,27 @@
 				C89455C92A84522E0045D123 /* MotivationSlide.swift in Sources */,
 				C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */,
 				C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */,
+				C8748AE62A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */,
 				C8748AC52A8ABA4800CF472D /* ChannelsBasicsSlide.swift in Sources */,
 				DBEB96582321EF6044E1D797 /* SampleSlide.swift in Sources */,
 				C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */,
 				C8D8E10E2A86D1B60083A38B /* PhasedStateStore+Extensions.swift in Sources */,
 				C8748ACF2A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
+				C8748AF32A8BDD3800CF472D /* WaterDrops.swift in Sources */,
 				4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */,
 				C8E2DB822A82EE67006D1503 /* ResponderChainSlide.swift in Sources */,
+				C8748AF02A8BD95B00CF472D /* ConfettiView.swift in Sources */,
 				C8D8E10C2A86B8B30083A38B /* View+Extensions.swift in Sources */,
+				C8748ADE2A8BD90200CF472D /* ParticleEmitterInternalState.swift in Sources */,
 				312ABB1A402A2B6AD0B12552 /* SwiftConfApp.swift in Sources */,
 				C8D8E1122A86D5C00083A38B /* HeaderSlide+Extension.swift in Sources */,
+				C8748AE22A8BD90200CF472D /* ParticleEmitterSource.swift in Sources */,
 				C89455C42A82FB8F0045D123 /* Callout.swift in Sources */,
+				C8748ADC2A8BD90200CF472D /* ParticleEmitterParticle.swift in Sources */,
+				C8748AE02A8BD90200CF472D /* ParticleEmitter.swift in Sources */,
 				C8E2DB7C2A82EC7A006D1503 /* DownstreamSlide.swift in Sources */,
 				C8E2DB862A82EEB1006D1503 /* RemoteResourcesSlide.swift in Sources */,
+				C8748AE82A8BD90200CF472D /* ParticleEmitterOpacityRule.swift in Sources */,
 				C89455C72A82FCF90045D123 /* ColorSchemeProvider.swift in Sources */,
 				C89455C22A82FB740045D123 /* CalloutStyle.swift in Sources */,
 				C8748AC82A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift in Sources */,
@@ -415,6 +475,7 @@
 				C8748AB22A886AAB00CF472D /* HeaderStyle.swift in Sources */,
 				C8748AB42A886AAF00CF472D /* Element.swift in Sources */,
 				C8748ABC2A886AB300CF472D /* MotivationSlide.swift in Sources */,
+				C8748AE52A8BD90200CF472D /* ParticleEmitterRules.swift in Sources */,
 				C8748AD32A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */,
 				C8748AC02A886AB300CF472D /* DownstreamSlide.swift in Sources */,
 				C8748AB32A886AAB00CF472D /* CalloutStyle.swift in Sources */,
@@ -424,19 +485,27 @@
 				C8748AB52A886AAF00CF472D /* Subtitle.swift in Sources */,
 				C8748ABB2A886AB300CF472D /* ErrorHandlingSlide.swift in Sources */,
 				C8748A9B2A886A6500CF472D /* PresenterApp.swift in Sources */,
+				C8748AE72A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */,
 				C8748AC62A8ABA4800CF472D /* ChannelsBasicsSlide.swift in Sources */,
 				C8748AB92A886AB300CF472D /* ViewTreeSlide.swift in Sources */,
 				C8748AAE2A886AA700CF472D /* PhasedStateStore+Extensions.swift in Sources */,
 				C8748AB72A886AB300CF472D /* ResponderChainSlide.swift in Sources */,
 				C8748AD02A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
+				C8748AF42A8BDD3800CF472D /* WaterDrops.swift in Sources */,
 				C8748AC12A886AB300CF472D /* RemoteResourcesSlide.swift in Sources */,
 				C8748AC22A886AB300CF472D /* OutroSlide.swift in Sources */,
+				C8748AF12A8BD95B00CF472D /* ConfettiView.swift in Sources */,
 				C8748AAF2A886AA700CF472D /* CodeThemeEnvironment.swift in Sources */,
+				C8748ADF2A8BD90200CF472D /* ParticleEmitterInternalState.swift in Sources */,
 				C8748AB62A886AAF00CF472D /* Callout.swift in Sources */,
 				C8748ABF2A886AB300CF472D /* IntroSlide.swift in Sources */,
+				C8748AE32A8BD90200CF472D /* ParticleEmitterSource.swift in Sources */,
 				C8748ABD2A886AB300CF472D /* WrapUpSlide.swift in Sources */,
+				C8748ADD2A8BD90200CF472D /* ParticleEmitterParticle.swift in Sources */,
+				C8748AE12A8BD90200CF472D /* ParticleEmitter.swift in Sources */,
 				C8748AAC2A886AA700CF472D /* View+Extensions.swift in Sources */,
 				C8748AAB2A886AA700CF472D /* ColorSchemeProvider.swift in Sources */,
+				C8748AE92A8BD90200CF472D /* ParticleEmitterOpacityRule.swift in Sources */,
 				C8748AAD2A886AA700CF472D /* HeaderSlide+Extension.swift in Sources */,
 				C8748AB82A886AB300CF472D /* SampleSlide.swift in Sources */,
 				C8748AC92A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift in Sources */,
@@ -751,6 +820,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		C8748AEA2A8BD92900CF472D /* XCRemoteSwiftPackageReference "CGMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmilioPelaez/CGMath";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		C8748A902A88634400CF472D /* SlideKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -760,6 +840,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C8748A8F2A88634400CF472D /* XCLocalSwiftPackageReference "../../Third Party/SlideKit" */;
 			productName = SlideKit;
+		};
+		C8748AEB2A8BD92900CF472D /* CGMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8748AEA2A8BD92900CF472D /* XCRemoteSwiftPackageReference "CGMath" */;
+			productName = CGMath;
+		};
+		C8748AED2A8BD93000CF472D /* CGMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8748AEA2A8BD92900CF472D /* XCRemoteSwiftPackageReference "CGMath" */;
+			productName = CGMath;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -16,6 +16,10 @@ struct OutroSlide: Slide {
 			Callout("Built with SlideKit")
 		}
 		.imageOverlay("MastodonQR")
+		.extend(.center)
+		.background {
+			ConfettiView()
+		}
 	}
 }
 
