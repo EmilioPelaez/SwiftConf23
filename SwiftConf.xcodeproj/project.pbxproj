@@ -47,6 +47,10 @@
 		C8748AC92A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AC72A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift */; };
 		C8748ACB2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ACA2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift */; };
 		C8748ACC2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ACA2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift */; };
+		C8748ACF2A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */; };
+		C8748AD02A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */; };
+		C8748AD22A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */; };
+		C8748AD32A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */; };
 		C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B62A82F4230045D123 /* SubtitleStyle.swift */; };
 		C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B82A82F4730045D123 /* HeaderStyle.swift */; };
 		C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BA2A82F4D20045D123 /* ContentStyle.swift */; };
@@ -89,6 +93,8 @@
 		C8748AC42A8ABA4800CF472D /* ChannelsBasicsSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsBasicsSlide.swift; sourceTree = "<group>"; };
 		C8748AC72A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsEnvironmentSlide.swift; sourceTree = "<group>"; };
 		C8748ACA2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPreferencesSlide.swift; sourceTree = "<group>"; };
+		C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedEnvironment.swift; sourceTree = "<group>"; };
+		C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderChainVisualization.swift; sourceTree = "<group>"; };
 		C89455B62A82F4230045D123 /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
 		C89455B82A82F4730045D123 /* HeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle.swift; sourceTree = "<group>"; };
 		C89455BA2A82F4D20045D123 /* ContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStyle.swift; sourceTree = "<group>"; };
@@ -215,6 +221,7 @@
 				C89455BD2A82F5680045D123 /* Subtitle.swift */,
 				C89455BF2A82F63B0045D123 /* Element.swift */,
 				C89455C32A82FB8F0045D123 /* Callout.swift */,
+				C8748AD12A8BCABB00CF472D /* ResponderChainVisualization.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -227,6 +234,7 @@
 				C8D8E10D2A86D1B60083A38B /* PhasedStateStore+Extensions.swift */,
 				C8D8E1112A86D5C00083A38B /* HeaderSlide+Extension.swift */,
 				C8748A922A8869A700CF472D /* CodeThemeEnvironment.swift */,
+				C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -369,6 +377,7 @@
 				C8E2DB7A2A82EC32006D1503 /* ViewTreeSlide.swift in Sources */,
 				C8E2DB842A82EE92006D1503 /* ErrorHandlingSlide.swift in Sources */,
 				C8748A932A8869A700CF472D /* CodeThemeEnvironment.swift in Sources */,
+				C8748AD22A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */,
 				C8E2DB8A2A82EF08006D1503 /* OutroSlide.swift in Sources */,
 				C89455C02A82F63B0045D123 /* Element.swift in Sources */,
 				C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */,
@@ -381,6 +390,7 @@
 				DBEB96582321EF6044E1D797 /* SampleSlide.swift in Sources */,
 				C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */,
 				C8D8E10E2A86D1B60083A38B /* PhasedStateStore+Extensions.swift in Sources */,
+				C8748ACF2A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
 				4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */,
 				C8E2DB822A82EE67006D1503 /* ResponderChainSlide.swift in Sources */,
 				C8D8E10C2A86B8B30083A38B /* View+Extensions.swift in Sources */,
@@ -405,6 +415,7 @@
 				C8748AB22A886AAB00CF472D /* HeaderStyle.swift in Sources */,
 				C8748AB42A886AAF00CF472D /* Element.swift in Sources */,
 				C8748ABC2A886AB300CF472D /* MotivationSlide.swift in Sources */,
+				C8748AD32A8BCABB00CF472D /* ResponderChainVisualization.swift in Sources */,
 				C8748AC02A886AB300CF472D /* DownstreamSlide.swift in Sources */,
 				C8748AB32A886AAB00CF472D /* CalloutStyle.swift in Sources */,
 				C8748AB12A886AAB00CF472D /* SubtitleStyle.swift in Sources */,
@@ -417,6 +428,7 @@
 				C8748AB92A886AB300CF472D /* ViewTreeSlide.swift in Sources */,
 				C8748AAE2A886AA700CF472D /* PhasedStateStore+Extensions.swift in Sources */,
 				C8748AB72A886AB300CF472D /* ResponderChainSlide.swift in Sources */,
+				C8748AD02A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
 				C8748AC12A886AB300CF472D /* RemoteResourcesSlide.swift in Sources */,
 				C8748AC22A886AB300CF472D /* OutroSlide.swift in Sources */,
 				C8748AAF2A886AA700CF472D /* CodeThemeEnvironment.swift in Sources */,

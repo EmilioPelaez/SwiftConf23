@@ -31,9 +31,27 @@ struct ChannelsPreferencesSlide: Slide {
 			if phasedStateStore.after(.responderChain) {
 				Element("Responder Chains") {
 					Callout("Chain of connected responders")
-					Callout("Responders may or may not handle arbitrary events")
+					Callout("Responders may handle some arbitrary events")
 					Callout("If a responder can't handle an event, it's passed along")
 				}
+			}
+		} auxiliary: {
+			if phasedStateStore.when(.initial) {
+				Image("Environment")
+					.prepare()
+					.scaleEffect(.init(width: 1, height: -1))
+					.extend(.center)
+			}
+			if phasedStateStore.when(.preferenceKey) {
+				VStack {
+					Image("PreferenceKey")
+						.prepare()
+					Image("Modifiers")
+						.prepare()
+				}
+			}
+			if phasedStateStore.when(.responderChain) {
+				ResponderChainVisualization()
 			}
 		}
 		.extend()

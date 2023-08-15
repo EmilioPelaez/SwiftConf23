@@ -34,6 +34,17 @@ struct ChannelsEnvironmentSlide: Slide {
 					Callout("Defining them requires a default value")
 				}
 			}
+		} auxiliary: {
+			ZStack {
+				Image("Environment")
+					.prepare()
+					.extend(.center)
+				if phasedStateStore.when(.objects) {
+					Image("MOO")
+						.prepare()
+						.padding()
+				}
+			}
 		}
 		.extend()
 	}

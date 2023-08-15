@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ViewTreeSlide: Slide {
 	@Environment(\.codeTheme) var codeTheme
+	@Environment(\.invertImages) var invertImages
 	
 	enum SlidePhasedState: Int, PhasedState {
 		case initial, realTree, visualization
@@ -22,10 +23,25 @@ struct ViewTreeSlide: Slide {
 			Code(code, colorTheme: codeTheme, fontSize: 30).extend(.center)
 		} extra: {
 			if phasedStateStore.when(.initial) {
-				SimpleView().extend(.center)
+				SimpleView()
+					.extend(.center)
 			}
 			if phasedStateStore.when(.realTree) {
-				Image("Tree").prepare().extend(.center)
+				Image("Tree")
+					.prepare()
+					.extend(.center)
+			}
+			if phasedStateStore.when(.visualization) {
+				if invertImages {
+					Image("Hierarchy")
+						.prepare()
+						.extend(.center)
+						.colorInvert()
+				} else {
+					Image("Hierarchy")
+						.prepare()
+						.extend(.center)
+				}
 			}
 		}
 	}
@@ -37,7 +53,7 @@ struct ViewTreeSlide: Slide {
 			.font(.headline)
 			.foregroundStyle(.primary)
 		VStack(alignment: .leading, spacing: 4) {
-			Text("iOS Developer since 2008")
+			Text("iOS Developer")
 			Text("Modus Create")
 		}
 		.font(.callout)

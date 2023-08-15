@@ -29,6 +29,7 @@ struct ColorSchemeProvider: ViewModifier {
 		content
 			.preferredColorScheme(container.colorScheme)
 			.environment(\.codeTheme, container.codeTheme)
+			.environment(\.invertImages, container.invertImages)
 			.background(container.backgroundColor)
 	}
 }
@@ -37,6 +38,7 @@ class ColorSchemeContainer: ObservableObject {
 	@Published var colorScheme: ColorScheme = .light
 	@Published var backgroundColor: Color = .white
 	@Published var codeTheme: CodeColorTheme = .presentation
+	@Published var invertImages = false
 	
 	func toggle() {
 		switch colorScheme {
@@ -44,10 +46,12 @@ class ColorSchemeContainer: ObservableObject {
 			colorScheme = .dark
 			backgroundColor = .black
 			codeTheme = .defaultDark
+			invertImages = true
 		case .dark:
 			colorScheme = .light
 			backgroundColor = .white
 			codeTheme = .presentation
+			invertImages = false
 		@unknown default:
 			fatalError()
 		}

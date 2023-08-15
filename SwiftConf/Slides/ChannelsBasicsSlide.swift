@@ -24,7 +24,7 @@ struct ChannelsBasicsSlide: Slide {
 			}
 			if phasedStateStore.after(.bindings) {
 				Element("Bindings") {
-					Callout("Wrapper for a value")
+					Callout("")
 				}
 			}
 			if phasedStateStore.after(.closures) {
@@ -32,6 +32,9 @@ struct ChannelsBasicsSlide: Slide {
 					Callout("")
 				}
 			}
+		} auxiliary: {
+			Image("Basics")
+				.prepare()
 		}
 		.extend()
 	}
