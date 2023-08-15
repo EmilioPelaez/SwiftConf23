@@ -10,7 +10,7 @@ import SwiftUI
 struct WaterDrops: View {
 	
 	var body: some View {
-		ParticleEmitter(runMode: runMode, emissionRules: rules, debug: true)
+		ParticleEmitter(runMode: runMode, emissionRules: rules, debug: false)
 			.ignoresSafeArea()
 	}
 	

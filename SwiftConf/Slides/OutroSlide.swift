@@ -21,6 +21,12 @@ struct OutroSlide: Slide {
 			ConfettiView()
 				.allowsHitTesting(false)
 		}
+		.overlay(alignment: .bottomLeading) {
+			Image("Modus")
+				.resizable()
+				.frame(width: 107, height: 100)
+				.padding(48)
+		}
 	}
 }
 

@@ -16,6 +16,13 @@ struct IntroSlide: Slide {
 			Callout("Mobile Engineering Director @ Modus Create")
 		}
 		.imageOverlay("Emilio")
+		.extend(.center)
+		.overlay(alignment: .bottomLeading) {
+			Image("Modus")
+				.resizable()
+				.frame(width: 107, height: 100)
+				.padding(48)
+		}
 	}
 }
 
