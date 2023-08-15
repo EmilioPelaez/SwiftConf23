@@ -71,6 +71,10 @@
 		C8748AF12A8BD95B00CF472D /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */; };
 		C8748AF32A8BDD3800CF472D /* WaterDrops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF22A8BDD3800CF472D /* WaterDrops.swift */; };
 		C8748AF42A8BDD3800CF472D /* WaterDrops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF22A8BDD3800CF472D /* WaterDrops.swift */; };
+		C8748AF62A8BDE1A00CF472D /* PresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF52A8BDE1A00CF472D /* PresentationState.swift */; };
+		C8748AF72A8BDE1A00CF472D /* PresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF52A8BDE1A00CF472D /* PresentationState.swift */; };
+		C8748AF92A8BDE4300CF472D /* WaterBreakModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF82A8BDE4300CF472D /* WaterBreakModifier.swift */; };
+		C8748AFA2A8BDE4300CF472D /* WaterBreakModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8748AF82A8BDE4300CF472D /* WaterBreakModifier.swift */; };
 		C89455B72A82F4230045D123 /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B62A82F4230045D123 /* SubtitleStyle.swift */; };
 		C89455B92A82F4730045D123 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455B82A82F4730045D123 /* HeaderStyle.swift */; };
 		C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89455BA2A82F4D20045D123 /* ContentStyle.swift */; };
@@ -124,6 +128,8 @@
 		C8748ADB2A8BD90200CF472D /* ParticleEmitterOpacityRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterOpacityRule.swift; sourceTree = "<group>"; };
 		C8748AEF2A8BD95B00CF472D /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		C8748AF22A8BDD3800CF472D /* WaterDrops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrops.swift; sourceTree = "<group>"; };
+		C8748AF52A8BDE1A00CF472D /* PresentationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationState.swift; sourceTree = "<group>"; };
+		C8748AF82A8BDE4300CF472D /* WaterBreakModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBreakModifier.swift; sourceTree = "<group>"; };
 		C89455B62A82F4230045D123 /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
 		C89455B82A82F4730045D123 /* HeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle.swift; sourceTree = "<group>"; };
 		C89455BA2A82F4D20045D123 /* ContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStyle.swift; sourceTree = "<group>"; };
@@ -283,6 +289,8 @@
 				C8D8E1112A86D5C00083A38B /* HeaderSlide+Extension.swift */,
 				C8748A922A8869A700CF472D /* CodeThemeEnvironment.swift */,
 				C8748ACE2A8BC8AB00CF472D /* InvertedEnvironment.swift */,
+				C8748AF52A8BDE1A00CF472D /* PresentationState.swift */,
+				C8748AF82A8BDE4300CF472D /* WaterBreakModifier.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -440,11 +448,13 @@
 				C89455BB2A82F4D20045D123 /* ContentStyle.swift in Sources */,
 				C8748AE62A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */,
 				C8748AC52A8ABA4800CF472D /* ChannelsBasicsSlide.swift in Sources */,
+				C8748AF92A8BDE4300CF472D /* WaterBreakModifier.swift in Sources */,
 				DBEB96582321EF6044E1D797 /* SampleSlide.swift in Sources */,
 				C89455BE2A82F5680045D123 /* Subtitle.swift in Sources */,
 				C8D8E10E2A86D1B60083A38B /* PhasedStateStore+Extensions.swift in Sources */,
 				C8748ACF2A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
 				C8748AF32A8BDD3800CF472D /* WaterDrops.swift in Sources */,
+				C8748AF62A8BDE1A00CF472D /* PresentationState.swift in Sources */,
 				4760783037EFBE2F637181FA /* SlideConfiguration.swift in Sources */,
 				C8E2DB822A82EE67006D1503 /* ResponderChainSlide.swift in Sources */,
 				C8748AF02A8BD95B00CF472D /* ConfettiView.swift in Sources */,
@@ -487,11 +497,13 @@
 				C8748A9B2A886A6500CF472D /* PresenterApp.swift in Sources */,
 				C8748AE72A8BD90200CF472D /* ParticleEmitterRunMode.swift in Sources */,
 				C8748AC62A8ABA4800CF472D /* ChannelsBasicsSlide.swift in Sources */,
+				C8748AFA2A8BDE4300CF472D /* WaterBreakModifier.swift in Sources */,
 				C8748AB92A886AB300CF472D /* ViewTreeSlide.swift in Sources */,
 				C8748AAE2A886AA700CF472D /* PhasedStateStore+Extensions.swift in Sources */,
 				C8748AB72A886AB300CF472D /* ResponderChainSlide.swift in Sources */,
 				C8748AD02A8BC8AB00CF472D /* InvertedEnvironment.swift in Sources */,
 				C8748AF42A8BDD3800CF472D /* WaterDrops.swift in Sources */,
+				C8748AF72A8BDE1A00CF472D /* PresentationState.swift in Sources */,
 				C8748AC12A886AB300CF472D /* RemoteResourcesSlide.swift in Sources */,
 				C8748AC22A886AB300CF472D /* OutroSlide.swift in Sources */,
 				C8748AF12A8BD95B00CF472D /* ConfettiView.swift in Sources */,

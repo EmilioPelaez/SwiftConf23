@@ -12,7 +12,7 @@ struct SwiftConfApp: App {
 	
 	/// Edit slide configurations in SlideConfiguration.swift
 	private static let configuration = SlideConfiguration()
-	@StateObject var colorSchemeContainer = ColorSchemeContainer()
+	@StateObject var colorSchemeContainer = PresentationState()
 	
 	/// A presentation content view.
 	/// Edit the view here if you'd like to set environments, overlay views or background views.
@@ -28,6 +28,7 @@ struct SwiftConfApp: App {
 				presentationContentView
 					.modifier(ColorSchemeProvider())
 					.modifier(ColorSchemeInverter())
+					.modifier(WaterBreakModifier())
 					.environmentObject(colorSchemeContainer)
 			}
 		}
@@ -43,6 +44,7 @@ struct SwiftConfApp: App {
 			}
 			.modifier(ColorSchemeProvider())
 			.modifier(ColorSchemeInverter())
+			.modifier(WaterBreakModifier())
 			.environmentObject(colorSchemeContainer)
 		}
 #if os(macOS)
