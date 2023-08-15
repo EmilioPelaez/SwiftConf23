@@ -147,6 +147,7 @@ In this case when we press this really cool button
 A view modifier that has to be higher in the view hierarchy is going use the handleEvent modifier to respond to this event
 We can see here that if the event is a CoolEvent we're going to print a message and return nil
 If it's anything else we're just going to pass that along
+Now let's see a more practical use
 """
 		}
 	}
