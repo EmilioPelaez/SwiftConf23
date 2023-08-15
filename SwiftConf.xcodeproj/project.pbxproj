@@ -192,6 +192,7 @@
 			children = (
 				C8E2DB7D2A82EC99006D1503 /* UpstreamSlide.swift */,
 				C8E2DB7B2A82EC7A006D1503 /* DownstreamSlide.swift */,
+				C8E2DB812A82EE67006D1503 /* ResponderChainSlide.swift */,
 			);
 			path = Old;
 			sourceTree = "<group>";
@@ -240,7 +241,6 @@
 				C8748AC42A8ABA4800CF472D /* ChannelsBasicsSlide.swift */,
 				C8748AC72A8ABAD800CF472D /* ChannelsEnvironmentSlide.swift */,
 				C8748ACA2A8ABB8200CF472D /* ChannelsPreferencesSlide.swift */,
-				C8E2DB812A82EE67006D1503 /* ResponderChainSlide.swift */,
 				C8E2DB7F2A82ECB7006D1503 /* MoreEnvironmentValuesSlide.swift */,
 				C8E2DB832A82EE92006D1503 /* ErrorHandlingSlide.swift */,
 				C8E2DB852A82EEB1006D1503 /* RemoteResourcesSlide.swift */,

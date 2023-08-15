@@ -20,7 +20,6 @@ struct SlideConfiguration {
 		ChannelsBasicsSlide()
 		ChannelsEnvironmentSlide()
 		ChannelsPreferencesSlide()
-		ResponderChainSlide()
 		MoreEnvironmentValuesSlide()
 		ErrorHandlingSlide()
 		RemoteResourcesSlide()

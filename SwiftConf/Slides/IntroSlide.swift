@@ -24,5 +24,6 @@ struct IntroSlide_Previews: PreviewProvider {
 		SlidePreview {
 			IntroSlide()
 		}
+		.headerSlideStyle(HeaderStyle())
 	}
 }
