@@ -13,7 +13,7 @@ struct WrapUpSlide: Slide {
 		HeaderSlide("Wrapping Up") {
 			VStack(alignment: .leading, spacing: 50) {
 				Element("All views in a SwiftUI app are connected") {
-					Callout("Via the View Hierarchy!")
+					Callout("Thanks to the View Hierarchy!")
 				}
 				Element("The View Hierarchy has multiple communication channels") {
 					Callout("The Environment")
