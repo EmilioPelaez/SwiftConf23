@@ -73,7 +73,7 @@ struct ContentView: View {
 				do {
 					try ContentService.loadContent()
 				} catch {
-					triggerEvent(AuthorizationError())
+					triggerEvent(error)
 				}
 			}
 	}
@@ -275,7 +275,7 @@ struct ContentView: View {
 				do {
 					try ContentService.loadContent()
 				} catch {
-					triggerEvent(AuthorizationError())
+					triggerEvent(error)
 				}
 			}
 	}

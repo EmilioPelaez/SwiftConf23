@@ -13,6 +13,7 @@ struct OutroSlide: Slide {
 		HeaderSlide("Thank you!") {
 			Callout("Questions? Comments?")
 			Callout("Follow me on Mastodon!")
+			Callout("Built with SlideKit")
 		}
 		.imageOverlay("MastodonQR")
 	}

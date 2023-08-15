@@ -17,9 +17,11 @@ struct MotivationSlide: Slide {
 				Element("We're going to explore the tools available in SwiftUI")
 				Element("And find interesting ways of using them!")
 			}
+			.padding(.bottom, 200)
 			.extend(.center)
 		} auxiliary: {
-			Image("Architecture").prepare()
+			Image("Architecture")
+				.prepare()
 		}
 	}
 	
