@@ -102,6 +102,13 @@ struct MyApp: App {
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.receiveEvent { event in
+					if event is AuthorizationError {
+						return ShowLoginEvent()
+					} else {
+						return event
+					}
+				}
 				.modifier(LoginModifier())
 				.receiveEvent { event in
 					if let error = event as? Error {
@@ -152,13 +159,15 @@ struct ErrorAlertModifier: ViewModifier {
 """
 		case .login:
 """
+struct ShowLoginEvent {}
+
 struct LoginModifier: ViewModifier {
 	@State var showLogin = false
 	
 	func body(content: Content) -> some View {
 		content
 			.receiveEvent { event in
-				guard event is AuthorizationError else {
+				guard event is ShowLoginEvent else {
 					return event
 				}
 				showLogin = true
@@ -177,31 +186,43 @@ struct LoginModifier: ViewModifier {
 		switch phasedStateStore.current {
 		case .initial:
 """
+Let's use it to handle some errors
+
 Something that happens often is that a user will encounter an error where all we can do is show an alert
-In this view we're trying to load some content and when that fails, we present an alert that just tells the user they are not authorized
-But what if instead of having this kind of code everywhere in our application, we could collect use our responder chain to report the error
+
+In this view we're trying to load some content and when that fails, we present an alert that just tells the user they are not logged in
+
+But what if instead of having this kind of boilerplate everywhere in our application, we could collect these errors in a single location
 """
 		case .errorModifier:
 """
-By using the closure we just created we can send an event up the view hierarchy and setup a responder that will handle it
-We'll create a modifier that receives the events and if it's a Localized Error, we will show an alert like this
-If we receive anything else, we'll just ignore it
-Now we can go back to our view and remove all the code that shows the alert and replace it with a call to our closure
-We need to make sure that our error handling modifier is high enough in the view hierarchy to respond to all the events
+This is a lot of code, but first let's look at the modifier on the right
+
+This modifier is going to be responsible for showing the alert error
+It will receive the events, and if the event is a Localized Error, it will show an alert with that error's description
+
+On the bottom left, all our view has to do is read that environment value and call it as a function when an error happens
 """
 		case .analytics:
 """
-And because the responder chain is so modular, we can easily add new handlers
+And because the responder chain is so modular, we can easily add more functionality to this
+
 For example, we could add a handler that will log every error that goes through it to our analytics service
-In this case, we're receiving all the errors but we're not consuming any of them
+
+In this case, we're not consuming any events at all
 """
 		case .login:
 """
-We could also add an earlier responder that will look for AuthorizationErrors
-Instead of showing an alert it will show the login view
-I want to note that order matters here
-If the login modifier is added before the analytics handler, the analytics handler will never receive that error
-If we add it afterwards it will be logged and then consumed by the login modifier
+Remember we said that a handler can transform an event
+
+Let's imagine that we have a LoginModifier that is responsible for showing the login screen
+This modifier is already expecting a ShowLoginEvent
+But our view is sending an AuthorizationError
+
+What we can do is add a handler that will look for an AuthorizationError and it will tranform it into a ShowLoginEvent
+
+I want to note here that order really matters
+If the login modifier was added before the transformation, this wouldn't work
 """
 		}
 	}
@@ -285,6 +306,13 @@ struct MyApp: App {
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.receiveEvent { event in
+					if event is AuthorizationError {
+						return ShowLoginEvent()
+					} else {
+						return event
+					}
+				}
 				.modifier(LoginModifier())
 				.receiveEvent { event in
 					if let error = event as? Error {
@@ -303,13 +331,15 @@ struct LoginView: View {
 	}
 }
 
+struct ShowLoginEvent {}
+
 struct LoginModifier: ViewModifier {
 	@State var showLogin = false
 	
 	func body(content: Content) -> some View {
 		content
 			.receiveEvent { event in
-				guard event is AuthorizationError else {
+				guard event is ShowLoginEvent else {
 					return event
 				}
 				showLogin = true

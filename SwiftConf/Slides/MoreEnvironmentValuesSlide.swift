@@ -12,7 +12,8 @@ struct MoreEnvironmentValuesSlide: Slide {
 	@Environment(\.codeTheme) var codeTheme
 	
 	enum SlidePhasedState: Int, PhasedState {
-		case initial, environment, modifier, examples
+		case environment, modifier, examples
+		static var initial: SlidePhasedState { .environment }
 	}
 	
 	@Phase var phasedStateStore
@@ -30,9 +31,6 @@ struct MoreEnvironmentValuesSlide: Slide {
 	func code(for state: SlidePhasedState?) -> String {
 		guard let state else { return "" }
 		switch state {
-		case .initial:
-			return """
-"""
 		case .environment:
 			return """
 struct TriggerEvent {
@@ -44,8 +42,8 @@ struct TriggerEvent {
 }
 
 // let trigger = TriggerEvent { _ in }
-// trigger("Hello")
 // trigger.execute("Hello")
+// trigger("Hello")
 
 struct TriggerEventKey: EnvironmentKey {
 	static var defaultValue: TriggerEvent = .init { _ in print("Unhandled Event") }
@@ -113,40 +111,57 @@ struct CoolModifier: ViewModifier {
 	
 	var script: String {
 		switch phasedStateStore.current {
-		case .initial:
-"""
-"""
 		case .environment:
 """
 We'll start by creating a struct that contains a closure
+
 Environment values are expected to be value types, but closures are reference types
 That's why we wrap our closure in a struct
-We're using callAsFunction as the name of the function because it allows us to omit the function name
+
+We're using callAsFunction as the name of the function because it allows us to call a value as if it was a function
+In the example here it allows us to skip the .execute
 It's just syntactic sugar
-If you look at the DismissAction provided by SwiftUI it does the same thing
+If you look at the DismissAction that SwiftUI uses, it does the same thing
+
 Our closure takes a value of Any type because our event can be anything we want
-We'll need to create an environment key and we'll give it a default value that will print a message because this means the event wasn't handled
+
+Next we'll need to create an environment key and we'll give it a default value
+It will print a message in case the event wasn't handled
 Then we extend EnvironmentValues to add our own key
+
 Now that we have our environment value we need a view modifier that can act as a link
 """
 		case .modifier:
 """
 We're going to create a view modifier that reads the value from the environment, and also publishes its own value
+
 This modifier will take a handler as a parameter
 This handler will be a closure that will be responsible for determining if it can handle the event
-We're going to pass the event to the handler, and it will return nil when the event has been consumed
-Or the handler will return something, either the same event or a new one, and we'll send it up the hierarchy
-We add a view extension to make it easier to use
+
+To use it we're going to pass the event to the handler
+If the handler returns nil it means the event was handled and consumed
+The handler can also return something, either the same event or a new one
+If it does, we send that event up the view hierarhy
+
+Finally we'll add a view extension to make it easy to use
+
+Now let's see at how we can use this
 """
 		case .examples:
 """
-This is how we are going to use this
-We create a custom type that will be our event
-In one of our views we're going to read the envionment value to trigger that event when something happens
-In this case when we press this really cool button
-A view modifier that has to be higher in the view hierarchy is going use the handleEvent modifier to respond to this event
-We can see here that if the event is a CoolEvent we're going to print a message and return nil
+First create a custom type that will be our event
+
+Then in one of our views we're going to read the envionment value
+We're going to call it as a function when something happens
+In this case it will be when we press this really cool button
+
+We'll use a view modifier to receive the event
+
+This view modifier has to be added higher in the view hierarchy
+
+If the received event is a CoolEvent, we're going to print a message and consume the event
 If it's anything else we're just going to pass that along
+
 Now let's see a more practical use
 """
 		}

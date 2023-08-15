@@ -33,8 +33,11 @@ struct WrapUpSlide: Slide {
 	var script: String {
 """
 All the views in a SwiftUI app are connected to each other through the view hierarchy or view tree
+
 This view hierarchy has multiple communication channels that we can leverage to share data and messages between any two views in our application
+
 The environment and preference channels are very flexible and modular, but that comes at the cost of not having compile-time safety
+So be careful
 """
 	}
 }

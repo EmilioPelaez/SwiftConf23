@@ -24,6 +24,7 @@ struct WaterBreakModifier: ViewModifier {
 			.overlay {
 				if container.waterBreak {
 					WaterDrops()
+						.allowsHitTesting(false)
 				}
 			}
 	}

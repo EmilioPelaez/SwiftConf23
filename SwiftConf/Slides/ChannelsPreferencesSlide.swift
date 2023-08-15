@@ -61,35 +61,57 @@ struct ChannelsPreferencesSlide: Slide {
 		switch phasedStateStore.current {
 		case .initial:
 """
-If we want to send values up the view hierarchy we can use Preferences
-Preferences are kind of a reverse environment value
-They also work with keys but you update it's value deeper in the hierarchy and observe it's value above
+What if we want to send data back up the view hierarchy
+
+In that case we can use Preferences
+Preferences are kind of a reverse environment value mechanism
+They also work with keys
+
+But with an environment object, the value is published up in the hierarchy
+And observed below
+
+With Preferences, the value is updated below
+And observed above
 """
 		case .preferenceKey:
 """
-I find these very intriguing because if you look at the PreferenceKey protocol, only one public type conforms to it
-If you look at the documentation it says "Don’t use this"
+I find these very intriguing for a few reasons
+
+If you look at the PreferenceKey protocol, only one public type conforms to it
+When you look at the documentation for that type it says "Don’t use this"
+
 And yet there are 11 different view modifiers that you can use to interact with preferences
-I believe that SwiftUI should provide more preference keys out of the box, like a scroll view offset
+
+I think that SwiftUI should provide more preference keys out of the box
+A useful one would be a preference key to read the scroll offset of a scroll view
+
 The name Preferences in my opinion doesn't make it super obvious what is it that they do
-One of the most common usages for preferences I've seen is to read the size of a child view
-If we look at the available modifiers we can see they behave differently to environment values
-Preferences follow a pattern called a responder chain
+One of the most common uses for preferences I've seen is to read the size of a child view
+
+If we look at the modifiers available to use with preference keys, there's one that stands out
+There's a modifier that allows us to transform the values that are coming up the hierarhy
+When I saw this it reminded me of the responder chain pattern
 """
 		case .responderChain:
 """
-A responder chain is a design pattern where we have a number of connected objects
+A responder chain is a pattern where we have a number of connected objects
 Each one of this objects is called a responder because it has the potential to respond to an arbitrary event
+
 They way we use it is by giving an event to one of the responders of the chain
-That responder determines if it can respond to the event
+This responder determines if it can respond to the event
 If it can, the event is consumed
-If it cannot, the event is passed to the next responder, who does the same thing
+If it can't, the event is passed to the next responder, who does the same thing
+
 This goes on until the event is consumed or it reaches the end
 Depending on the implementation, it may fail silently or throw an error
-Responders are not limited to just responding or not, they can also modify the event or send a different one
 
-The responder chain is one of my favorite design patterns because it's very flexible and modular
-I asked myself how can I build a responder chain that works not just with values but with events?
+Responders are not limited to just handling an event or not
+They can also modify the event or replace it with a completely different one
+
+Preferences are really handy to send values up the view hierarchy
+But what if we wanted to do something similar for events?
+
+Let's see how we can do that using environment values
 """
 		}
 	}

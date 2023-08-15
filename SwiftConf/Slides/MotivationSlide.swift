@@ -28,10 +28,13 @@ struct MotivationSlide: Slide {
 	var script: String {
 """
 The motivation for this talk is that one of the earliest challenges developers run into is how to send data between two components in an application
+
 It's such a common challenge that we develop whole architectures to solve it
 There's lots of opinions on how it should be done
+
 But I'm not here to convince you to use or not use a specific architecture
 Instead we're going to explore the tools available out of the box in SwiftUI
+
 We're also going to find interesting ways of using them
 """
 	}

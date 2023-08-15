@@ -19,6 +19,7 @@ struct OutroSlide: Slide {
 		.extend(.center)
 		.background {
 			ConfettiView()
+				.allowsHitTesting(false)
 		}
 	}
 }
