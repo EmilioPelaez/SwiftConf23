@@ -73,12 +73,6 @@ These are really easy to use and very powerful
 They are also a bit easy to overuse
 I'm sure a lot of us have put way too much logic into an environment object and one point or another
 
-They allow us to encapsulate logic and values into a class and share that with multiple views
-The nice thing about classes is that they have a more straight-forward life cycle than views and they are a lot more testable
-
-A downside of environment objects is that any change to any of its values will trigger a reevaluation of all the views that observe them
-But with the new Observation framework in iOS 17 this is no longer an issue
-
 We can use them to share data in any direction because every view that observes them will reflect any changes
 If we want to communicate between sibling or cousin views, all we need to do is to find a common ancestor and inject the environment object there
 """

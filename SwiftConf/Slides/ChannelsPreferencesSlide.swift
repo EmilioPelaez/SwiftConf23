@@ -77,20 +77,23 @@ And observed above
 """
 I find these very intriguing for a few reasons
 
+The first is taht name Preferences doesn't make it super obvious what the functionality is supposed to be
+
 If you look at the PreferenceKey protocol, only one public type conforms to it
 When you look at the documentation for that type it says "Don’t use this"
 
 And yet there are 11 different view modifiers that you can use to interact with preferences
+So it seems like a robust system
+But they don't give us enough keys to play with it
 
 I think that SwiftUI should provide more preference keys out of the box
 A useful one would be a preference key to read the scroll offset of a scroll view
 
-The name Preferences in my opinion doesn't make it super obvious what is it that they do
-One of the most common uses for preferences I've seen is to read the size of a child view
+In fact, many of these modifiers make references to the layout system
+One of the most common uses for preferences you'll see is to read the size of a child view
 
-If we look at the modifiers available to use with preference keys, there's one that stands out
-There's a modifier that allows us to transform the values that are coming up the hierarhy
-When I saw this it reminded me of the responder chain pattern
+I'm going to get a bit theoretical
+The way environment values and preferences are implemented follow a design pattern called responder chain
 """
 		case .responderChain:
 """
@@ -108,7 +111,7 @@ Depending on the implementation, it may fail silently or throw an error
 Responders are not limited to just handling an event or not
 They can also modify the event or replace it with a completely different one
 
-Preferences are really handy to send values up the view hierarchy
+Preferences are really useful to send layout values up the view hierarchy
 But what if we wanted to do something similar for events?
 
 Let's see how we can do that using environment values

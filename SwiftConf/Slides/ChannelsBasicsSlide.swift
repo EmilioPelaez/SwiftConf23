@@ -11,7 +11,7 @@ import SwiftUI
 struct ChannelsBasicsSlide: Slide {
 	
 	enum SlidePhasedState: Int, PhasedState {
-		case arguments, bindings, closures
+		case arguments, bindings, observables, closures
 		static var initial: SlidePhasedState { .arguments }
 	}
 	
@@ -26,6 +26,11 @@ struct ChannelsBasicsSlide: Slide {
 				Element("Bindings") {
 					Callout("Wraps a value to allow a child to modify it")
 					Callout("Changes to the value will be reflected in all the views that observe the binding")
+				}
+			}
+			if phasedStateStore.after(.observables) {
+				Element("Observable Objects") {
+					Callout("Encapsulates logic and values into a class")
 				}
 			}
 			if phasedStateStore.after(.closures) {
@@ -66,8 +71,14 @@ This mechanism is used widely in SwiftUI by components like switches and text fi
 It's one of the ways we can use to share data between siblings and cousins
 We can pass a binding from a common ancestor to different branches of our tree
 Any updates to that binding from any of the views will be reflected in all the other views that observe it
+"""
+		case .observables:
+"""
+They allow us to encapsulate logic and values into a class and share that with multiple views
+The nice thing about classes is that they have a more straight-forward life cycle than views and they are a lot more testable
 
-Then we have another mechanism to pass events up the hierarchy, closures
+A downside of environment objects is that any change to any of its values will trigger a reevaluation of all the views that observe them
+But with the new Observation framework in iOS 17 this is no longer an issue
 """
 		case .closures:
 """
