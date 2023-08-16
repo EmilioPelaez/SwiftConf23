@@ -77,7 +77,7 @@ Any updates to that binding from any of the views will be reflected in all the o
 They allow us to encapsulate logic and values into a class and share that with multiple views
 The nice thing about classes is that they have a more straight-forward life cycle than views and they are a lot more testable
 
-A downside of environment objects is that any change to any of its values will trigger a reevaluation of all the views that observe them
+A downside of observable objects is that any change to any of its values will trigger a reevaluation of all the views that observe them
 But with the new Observation framework in iOS 17 this is no longer an issue
 """
 		case .closures:

@@ -20,12 +20,12 @@ struct ChannelsEnvironmentSlide: Slide {
 		HeaderSlide("Communication Channels: The Environment") {
 			Element("What is it?") {
 				Callout("A collection of data that gets propagated to every view in the view hierarchy")
-				Callout("Data will flow downwards until replaced")
 			}
 			if phasedStateStore.after(.objects) {
 				Element("Environment Objects") {
+					Callout("Injects Observable Objects into the hierarchy")
 					Callout("Very easy to use and powerful")
-					Callout("Use classes instead of structs")
+					Callout("Easy to overuse")
 				}
 			}
 			if phasedStateStore.after(.values) {
@@ -35,6 +35,7 @@ struct ChannelsEnvironmentSlide: Slide {
 					if phasedStateStore.after(.extras) {
 						Callout("Closures*")
 						Callout("Bindings")
+						Callout("Not Objects")
 					}
 				}
 			}
@@ -69,12 +70,14 @@ There are two main ways of interacting with the Environment
 """
 The first one is by using Environment Objects
 
-These are really easy to use and very powerful
-They are also a bit easy to overuse
+This is a mechanism we can use to inject an observable object into the environment
+
+This is really easy to use and very powerful
+It's also a bit easy to overuse
 I'm sure a lot of us have put way too much logic into an environment object and one point or another
 
 We can use them to share data in any direction because every view that observes them will reflect any changes
-If we want to communicate between sibling or cousin views, all we need to do is to find a common ancestor and inject the environment object there
+If we want to communicate between sibling or cousin views, all we need to do is to find a common ancestor and inject the object there
 """
 			case .values:
 """
@@ -112,6 +115,8 @@ Kind of a micro environment object
 There's a caveat
 The default value of a binding is a constant binding
 If you fail to inject a live binding your values won't update and you may struggle to find why
+
+You shouldn't put an observable object here because it won't update
 """
 		}
 	}
