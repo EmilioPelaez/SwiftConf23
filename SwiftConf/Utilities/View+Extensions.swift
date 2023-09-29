@@ -20,6 +20,7 @@ extension View {
 				.clipShape(Circle())
 				.padding(.trailing, 100)
 		}
+		.allowsHitTesting(false)
 	}
 }
 

@@ -25,7 +25,6 @@ struct ChannelsBasicsSlide: Slide {
 			if phasedStateStore.after(.bindings) {
 				Element("Bindings") {
 					Callout("Wraps a value to allow a child to modify it")
-					Callout("Changes to the value will be reflected in all the views that observe the binding")
 				}
 			}
 			if phasedStateStore.after(.observables) {

@@ -19,5 +19,6 @@ struct HeaderStyle: HeaderSlideStyle {
 		}
 		.padding(48)
 		.frame(maxWidth: .infinity, alignment: .leading)
+		.allowsHitTesting(false)
 	}
 }
